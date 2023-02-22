@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>24-seven</title>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c94aab195e.js" crossorigin="anonymous"></script>
+
+    <!-- CSS Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <section id="title">
+        <div class="navigation container-fluid">
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a class="navbar-brand" href="#">24-seven</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarSupportedContent">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">More Actions</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link active" href="#catalog">Catalog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#download">Download</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                            <li class="nav-item">
+                                <form role="search">
+                                    <!-- <input class="form-control me-2" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <button class="search btn btn-outline-success" type="submit">Search</button> -->
+                                    <div class="container">
+                                        <input placeholder="Type to search..." required="" class="input" name="text"
+                                            type="text" data-bs-dismiss="">
+                                        <div class="icon">
+                                            <i class="search fa-solid fa-magnifying-glass"></i>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                            <li class="cart nav-item"><i class="fa-solid fa-cart-shopping"></i>
+                                <p><b>0</b></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Title -->
+        <div class="title row">
+            <div class="col-lg-6">
+                <h1 class="title-heading">Get Fresh and Imported Goods at Your Doorstep.</h1>
+                <button class="buy btn btn-outline-success btn-lg">Buy Now</button>
+            </div>
+
+            <div class="title-img col-lg-3 col-sm-6">
+                <img src="images/delivery.png" alt="Delivery-Image">
+            </div>
+            <div class="food-item col-lg-3 col-sm-6">
+                <ul class="food-item">
+                    <li><i class="fa-solid fa-cookie-bite fa-2x"></i></li>
+                    <li><i class="fa-solid fa-mug-hot fa-2x"></i></li>
+                    <li><i class="fa-solid fa-bottle-water fa-2x"></i></li>
+                    <li><i class="fa-solid fa-burger fa-2x"></i></li>
+                    <li><i class="fa-solid fa-cookie-bite fa-2x"></i></li>
+                    <li><i class="fa-solid fa-mug-hot fa-2x"></i></li>
+                    <li><i class="fa-solid fa-bottle-water fa-2x"></i></li>
+                    <li><i class="fa-solid fa-burger fa-2x"></i></li>
+                    <li><i class="fa-solid fa-cookie-bite fa-2x"></i></li>
+                    <li><i class="fa-solid fa-mug-hot fa-2x"></i></li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+
+    </section>
+
+    <!-- Catalog -->
+
+    <section id="catalog">
+
+        <div class="catalog">
+
+            <div class="popular-product">
+                <h2>Popular Products</h2>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img class="card-img-top" src="images/cheetos.jpg" alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">Cheetos</h3>
+                                <p class="card-text">Rs. 64.00</p>
+                                <button class="buy1 buy btn btn-outline-dark" value="cheetos">Buy Now</button>
+                                <div class="item1">
+                                    <button class="minus1 minus quantity-btn"><i class="fa-solid fa-minus"></i></button>
+                                    <p class="item-no1 item-no">0</p>
+                                    <button class="plus1 plus quantity-btn"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img class="card-img-top" src="images/oreo.jpg" alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">Oreo</h3>
+                                <p class="card-text">Rs. 35.00</p>
+                                <button class="buy2 buy btn btn-outline-dark" value="oreo">Buy Now</button>
+                                <div class="item2">
+                                    <button class="minus2 minus quantity-btn"><i class="fa-solid fa-minus"></i></button>
+                                    <p class="item-no2 item-no">0</p>
+                                    <button class="plus2 plus quantity-btn"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img class="card-img-top" src="images/mountain-dew.jpg" alt="">
+                            <div class="card-body">
+                                <h3 class="card-title">Mountain Dew</h3>
+                                <p class="card-text">Rs. 40.00</p>
+                                <button class="buy3 buy btn btn-outline-dark" value="dew">Buy Now</button>
+                                <div class="item3">
+                                    <button class="minus3 minus quantity-btn"><i class="fa-solid fa-minus"></i></button>
+                                    <p class="item-no3 item-no">0</p>
+                                    <button class="plus3 plus quantity-btn"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="regular-product">
+                <h2>Regular Product</h2>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <img class="card-img-top" src="images/lays.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Lays</h4>
+                                <p class="card-text">Rs. 20.00</p>
+                                <button class="buy4 buy btn btn-outline-dark" value="lays">Buy Now</button>
+                                <div class="item4">
+                                    <button class="minus4 minus quantity-btn"><i class="fa-solid fa-minus"></i></button>
+                                    <p class="item-no4 item-no">0</p>
+                                    <button class="plus4 plus quantity-btn"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <img class="card-img-top" src="images/pepsi.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Pepsi</h4>
+                                <p class="card-text">Rs. 40.00</p>
+                                <button class="buy5 buy btn btn-outline-dark" value="pepsi">Buy Now</button>
+                                <div class="item5">
+                                    <button class="minus5 minus quantity-btn"><i class="fa-solid fa-minus"></i></button>
+                                    <p class="item-no5 item-no">0</p>
+                                    <button class="plus5 plus quantity-btn"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <img class="card-img-top" src="images/maggi.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Maggi</h4>
+                                <p class="card-text">Rs. 25.00</p>
+                                <button class="buy6 buy btn btn-outline-dark" value="maggi">Buy Now</button>
+                                <div class="item6">
+                                    <button class="minus6 minus quantity-btn"><i class="fa-solid fa-minus"></i></button>
+                                    <p class="item-no6 item-no">0</p>
+                                    <button class="plus6 plus quantity-btn"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <img class="card-img-top" src="images/hide-and-seek.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Hide & Seek</h4>
+                                <p class="card-text">Rs. 30.00</p>
+                                <button class="buy7 buy btn btn-outline-dark" value="hide&seek">Buy Now</button>
+                                <div class="item7">
+                                    <button class="minus7 minus quantity-btn"><i class="fa-solid fa-minus"></i></button>
+                                    <p class="item-no7 item-no">0</p>
+                                    <button class="plus7 plus quantity-btn"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <img class="card-img-top" src="images/dairy-milk.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Dairy Milk</h4>
+                                <p class="card-text">Rs. 80.00</p>
+                                <button class="buy8 buy btn btn-outline-dark" value="dairy-milk">Buy Now</button>
+                                <div class="item8">
+                                    <button class="minus8 minus quantity-btn"><i class="fa-solid fa-minus"></i></button>
+                                    <p class="item-no8 item-no">0</p>
+                                    <button class="plus8 plus quantity-btn"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <img class="card-img-top" src="images/kitkat.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Kitkat</h4>
+                                <p class="card-text">Rs. 30.00</p>
+                                <button class="buy9 buy btn btn-outline-dark" value="kitkat">Buy Now</button>
+                                <div class="item9">
+                                    <button class="minus9 minus quantity-btn"><i class="fa-solid fa-minus"></i></button>
+                                    <p class="item-no9 item-no">0</p>
+                                    <button class="plus9 plus quantity-btn"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <img class="card-img-top" src="images/dark-fantesy.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Dark Fantasy</h4>
+                                <p class="card-text">Rs. 35.00</p>
+                                <button class="buy10 buy btn btn-outline-dark" value="dark-fantesy">Buy Now</button>
+                                <div class="item10">
+                                    <button class="minus10 minus quantity-btn"><i class="fa-solid fa-minus"></i></button>
+                                    <p class="item-no10 item-no">0</p>
+                                    <button class="plus10 plus quantity-btn"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <img class="card-img-top" src="images/coka-cola.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Coca Cola</h4>
+                                <p class="card-text">Rs. 60.00</p>
+                                <button class="buy11 buy btn btn-outline-dark" value="coka-cola">Buy Now</button>
+                                <div class="item11">
+                                    <button class="minus11 minus quantity-btn"><i class="fa-solid fa-minus"></i></button>
+                                    <p class="item-no11 item-no">0</p>
+                                    <button class="plus11 plus quantity-btn"><i class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <div class="about-download row">
+
+        <!-- About -->
+
+        <div class="about col-lg-6" id="about">
+            <h2>About us</h2>
+
+            <p>As our name suggests, 24-seven is available for 24 hours every day to deliever our services for our
+                customery who are in need of grocery items. 24-seven searches for exotic goods in affordable prices
+                and bring it to your locality. 24-seven also been covered by large media outlets like <em>Shape
+                    Magzine</em>, <em>The Today Show</em>, <em>USA Today</em>, <em>Times</em>, <em>The Food
+                    Network</em> and <em>Bon Appétit</em></p>
+
+        </div>
+
+        <!-- Download -->
+
+        <div class="download col-lg-6" id="download">
+            <h2>Download our app<br> for better experience.</h2>
+            <button class="icon btn btn-dark btn-lg download-btn"><i class="fa-brands fa-apple"></i> Download</button>
+            <button class="icon btn btn-outline-light btn-lg download-btn"><i class="fa-brands fa-google-play"></i>
+                Download</button>
+
+        </div>
+
+    </div>
+
+    <!-- Contact -->
+
+    <footer id="contact">
+        <div class="footer">
+            <i class="social-icon fa-brands fa-twitter fa-2x"></i>
+            <i class="social-icon fa-brands fa-facebook-f fa-2x"></i>
+            <i class="social-icon fa-brands fa-instagram fa-2x"></i>
+            <i class="social-icon fa-solid fa-envelope fa-2x"></i>
+            <p class="copyright">© Copyright 24-seven</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

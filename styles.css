@@ -1,0 +1,340 @@
+body {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+.navigation {
+    background-color: #A6BB8D;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #3C6255;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    background-color: #A6BB8D;
+    padding: 0.5% 0 0.5% 10%;
+    border-bottom: 3px solid #3C6255;
+}
+
+.navbar-toggler {
+    margin-right: 2rem;
+}
+
+.navbar-brand {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    color: #3C6255;
+}
+
+.nav-item {
+    padding: 0 5px;
+    color: #3C6255;
+}
+
+.cart{
+    background-color: white;
+    border-radius: 50px;
+    font-size: 18px;
+    padding: 2px;
+    margin-left: 0.5rem;
+    height: 2.5rem;box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+}
+
+.cart i{
+    padding: 10px;
+}
+
+.cart p{
+    display: none;
+    padding: 0 10px 0 5px;
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.offcanvas {
+    background-color: #A6BB8D;
+}
+
+h5 {
+    font-size: 1.7rem;
+}
+
+.offcanvas ul {
+    text-align: left;
+    padding: 0 2rem;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    color: #3C6255;
+}
+
+.container {
+    padding: 0;
+    position: relative;
+    --size-button: 40px;
+}
+
+.input {
+    padding-left: var(--size-button);
+    height: var(--size-button);
+    font-size: 15px;
+    border: none;
+    outline: none;
+    width: var(--size-button);
+    transition: all ease 0.3s;
+    background-color: #fff;
+    box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.input:focus,
+.input:not(:invalid) {
+    width: 200px;
+    cursor: text;
+}
+
+.input:focus+.icon,
+.input:not(:invalid)+.icon {
+    pointer-events: all;
+    cursor: pointer;
+}
+
+.container .icon {
+    position: absolute;
+    width: var(--size-button);
+    height: var(--size-button);
+    top: 0;
+    left: 0;
+    padding: 8px;
+    pointer-events: none;
+}
+
+.container .icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-close {
+    margin-right: 0;
+    padding-right: 10rem;
+}
+
+.search {
+    color: #3C6255;
+    padding-left: 4px;
+}
+
+@media(max-width:1020px){
+
+    .cart{
+        margin: 2px;
+        width: fit-content;
+    }
+
+    .input{
+        width: 200px;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Title Section */
+
+.title {
+    padding: 10% 0 0 15%;
+    text-align: left;
+    background: rgb(166, 187, 141);
+    background: linear-gradient(0deg, rgba(166, 187, 141, 1) 0%, rgba(188, 212, 160, 1) 50%, rgba(166, 187, 141, 1) 100%);
+    border-bottom: 5px solid #3C6255;
+}
+
+.title-img {
+    text-align: right;
+    padding: 0;
+    border-right: 5px solid #3C6255;
+}
+
+.title-heading {
+    padding: 0 15% 0 0;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #3C6255;
+}
+
+.food-item {
+    list-style-type: none;
+    padding: 0 1%;
+    size: 2rem;
+}
+
+.buy:hover {
+    background-color: #3C6255;
+}
+
+.food-item li {
+    padding: 0.2rem 0;
+    color: #3C6255;
+}
+
+/* Catalog Section */
+
+.catalog {
+    margin: 7% 10% 0;
+}
+
+.item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8,.item9,.item10,.item11{
+    vertical-align: top;
+    display: none;
+}
+
+.item-no{
+    display: inline-block;
+    border: 2px solid #efefef;
+    width: 50px;
+    height: 41px;
+    background-color: transparent;
+    text-align: center;
+    padding: 0 5px;
+    vertical-align: top;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.quantity-btn{
+    margin: 0;
+}
+
+.minus, .plus{
+    padding: 7px 10px 8px;
+    height: 41px;
+    background-color: transparent;
+    border: 2px solid #efefef;
+}
+.minus{
+    border-right: none;
+    margin-right: -5px;
+}
+
+.plus{
+    border-left: none;
+    margin-left: -5px;
+}
+
+.minus:hover, .plus:hover{
+    background-color: #eee;
+}
+
+/* Popular Section */
+
+.popular-product h2 {
+    padding-bottom: 2rem;
+}
+
+.popular-product .row .card {
+    margin: 1rem;
+}
+
+.popular-product img {
+    /* height: 19rem; */
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+.card-img-top {
+    width: auto;
+    transition: .3s ease;
+    background-color: white;
+}
+
+.card-img-top:hover {
+    border-radius: 5%;
+    transform: scale(1.1);
+    box-shadow: #A6BB8D 0px 13px 47px -5px, #A6BB8D 0px 8px 16px -8px;
+}
+
+/* Regular Section */
+
+.regular-product {
+    padding: 8% 0;
+}
+
+.regular-product h2 {
+    padding-bottom: 2rem;
+}
+
+.regular-product .row .card {
+    margin: 1rem;
+}
+
+.regular-product img {
+    /* height: 15rem; */
+    border-radius: 5px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+.regular-product .card-body {
+    height: 10%;
+}
+
+/* About Section */
+
+.about-download {
+    background-color: #A6BB8D;
+    padding: 5% 5%;
+    color: #3C6255;
+    border-top: 3px solid #3C6255;
+}
+
+.about p {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.download-btn {
+    margin: 5% 3%;
+}
+
+/* Footer Section */
+
+.footer {
+    background-color: #A6BB8D;
+    padding-bottom: 2%;
+}
+
+.social-icon {
+    margin: 0 20px 10px;
+    color: #3C6255;
+}
+
+.fa-twitter:hover {
+    color: #1da1f2;
+}
+
+.fa-facebook-f:hover {
+    color: #4867aa;
+}
+
+.fa-instagram:hover {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    -webkit-background-clip: text;
+    color: #fff0 !important;
+}
+
+.fa-envelope:hover {
+    color: rgba(255, 0, 0, 0.59);
+}
+
+.copyright {
+    color: #3C6255;
+}
